@@ -1,11 +1,11 @@
 {
-  'name': 'node-breadcrumbs'
-, 'version': '0.0.2'
-, 'engines': {
-    'node': '0.10.x'
-  , 'npm' : '1.2.x'
+  "name": "node-breadcrumbs"
+, "version": "0.0.1"
+, "engines": {
+    "node": "0.10.x"
+  , "npm" : "1.2.x"
   }
-, 'dependencies': {
-    'socket.io': '0.9.x'
+, "dependencies": {
+    "socket.io": "0.9.x"
   }
 }

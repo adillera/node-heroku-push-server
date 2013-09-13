@@ -1,7 +1,11 @@
-var app = require('http').createServer(),
+var app = require('http').createServer(handler),
     io  = require('socket.io').listen(app);
 
 app.listen(9595)
+
+var handler = function(req, res) {
+  console.log('Node-Breadcrumbs server started!')
+}
 
 io.sockets.on('connection', function(socket) {
   socket.on('subscribe', function(channel) {
