@@ -2,7 +2,7 @@ var app = require('http').createServer(handler),
     io  = require('socket.io').listen(app);
 
 
-app.listen(80)
+app.listen(9595)
 
 
 var handler = function(req, res) {
@@ -10,9 +10,9 @@ var handler = function(req, res) {
 }
 
 // Configuration for Heroku
-io.configure(function () { 
-  io.set("transports", ["xhr-polling"]); 
-  io.set("polling duration", 10); 
+io.configure(function () {
+  io.set("transports", ["xhr-polling"]);
+  io.set("polling duration", 10);
 });
 
 
