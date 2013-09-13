@@ -1,12 +1,13 @@
-var app = require('http').createServer(handler),
-    io  = require('socket.io').listen(app);
+var app  = require('http').createServer(handler),
+    io   = require('socket.io').listen(app),
+    port = process.env.PORT || 9595;
 
 
-app.listen(9595)
+app.listen(port)
 
 
 var handler = function(req, res) {
-  console.log('Node-Breadcrumbs server started!')
+  console.log('Node-Breadcrumbs server started! Listening to port ' + port)
 }
 
 // Configuration for Heroku
