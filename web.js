@@ -2,8 +2,6 @@ var app  = require('http').createServer(handler),
     io   = require('socket.io').listen(app),
     port = process.env.PORT || 9595;
 
-console.log(port)
-
 
 app.listen(port)
 
